@@ -9,8 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var client = Client(host: "192.168.1.111",port: 65432)
+    @State var message = ""
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            if !self.client.running {
+                Button(action: {
+                               self.client.start()
+                           }) {
+                               Text("Start")
+                           }
+            } else {
+                Text("Running")
+            }
+           
+            TextField("Hello", text: $message)
+            Button(action: {
+                self.client.send(data: self.message.data(using: .utf8)!)
+            }) {
+                Text("send")
+            }
+
+        }
     }
 }
 

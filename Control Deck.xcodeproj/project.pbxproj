@@ -16,6 +16,8 @@
 		22B16F5124C7647500C02660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B16F4F24C7647500C02660 /* LaunchScreen.storyboard */; };
 		22B16F5C24C7647600C02660 /* Control_DeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B16F5B24C7647600C02660 /* Control_DeckTests.swift */; };
 		22B16F6724C7647600C02660 /* Control_DeckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B16F6624C7647600C02660 /* Control_DeckUITests.swift */; };
+		22B16F7524C7648900C02660 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B16F7424C7648900C02660 /* Client.swift */; };
+		22B16F7724C764AD00C02660 /* ClientConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B16F7624C764AD00C02660 /* ClientConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		22B16F6224C7647600C02660 /* Control DeckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Control DeckUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B16F6624C7647600C02660 /* Control_DeckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control_DeckUITests.swift; sourceTree = "<group>"; };
 		22B16F6824C7647600C02660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B16F7424C7648900C02660 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		22B16F7624C764AD00C02660 /* ClientConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				22B16F4124C7646E00C02660 /* AppDelegate.swift */,
+				22B16F7424C7648900C02660 /* Client.swift */,
 				22B16F4324C7646E00C02660 /* SceneDelegate.swift */,
 				22B16F4824C7646E00C02660 /* ContentView.swift */,
+				22B16F7624C764AD00C02660 /* ClientConnection.swift */,
 				22B16F4A24C7647500C02660 /* Assets.xcassets */,
 				22B16F4F24C7647500C02660 /* LaunchScreen.storyboard */,
 				22B16F5224C7647500C02660 /* Info.plist */,
@@ -270,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B16F7724C764AD00C02660 /* ClientConnection.swift in Sources */,
 				22B16F4224C7646E00C02660 /* AppDelegate.swift in Sources */,
 				22B16F4424C7646E00C02660 /* SceneDelegate.swift in Sources */,
 				22B16F4924C7646E00C02660 /* ContentView.swift in Sources */,
+				22B16F7524C7648900C02660 /* Client.swift in Sources */,
 				22B16F4724C7646E00C02660 /* Control_Deck.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
